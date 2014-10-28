@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Make a Good Impression</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBbVDTpqxW3zR7KKrB5R7CX_YvTB8XIEQ&libraries=places"></script>
+    <script type="text/javascript" src="coffee_and_donuts.js"></script>
+  </head>
+  <body>
+      <div id="headers">
+        <h1 class="header" id="main_header">Make a Good Impression</h1>
+        <h5 class="header" id="sub_header">Arrive at your destination with coffee and donuts. Everyone will love you.</h1>
+      </div>
+
+  		<div id="input_text_section">
+        <b>Start Address </b>
+        <input type="text" size="50" id="start_address">
+        <br>
+        <b>Destination Address </b>
+        <input type="text" size="50" id="destination_address" value="282 2nd Street 4th floor, San Francisco, CA 94105">
+        <br>   
+        <b>Mode of Travel </b>
+        <select id="mode">
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="TRANSIT">Transit</option>
+        </select>
+        <br>
+        <div class="button">
+          <input type="button" value="Find shops close to your destination" onClick="initializePlaces()">
+        </div>
+      </div>
+
+      <div id="directionsPanel"></div>
+      
+      <div id="places" class="hidden_on_load">
+        <p><br>Select shop(s) below...</p>
+        <div class="places_list">
+          <h2 id="coffee_header">Coffee</h2>
+          <dl>
+            <div id="coffee1_option" class="coffee_option" onClick="select_place(this.id)">
+              <dt id="coffee1"></dt>
+                <dd id="coffee1_address"></dd>
+                <dd id="coffee1_rating"></dd><br>
+            </div>
+            <div id="coffee2_option" class="coffee_option" onClick="select_place(this.id)">
+              <dt id="coffee2"></dt>
+                <dd id="coffee2_address"></dd>
+                <dd id="coffee2_rating"></dd><br>
+            </div>
+            <div id="coffee3_option" class="coffee_option" onClick="select_place(this.id)">
+              <dt id="coffee3"></dt>
+                <dd id="coffee3_address"></dd>
+                <dd id="coffee3_rating"></dd><br>
+            </div>
+            <div id="coffee4_option" class="coffee_option" onClick="select_place(this.id)">
+              <dt id="coffee4"></dt>
+                <dd id="coffee4_address"></dd>
+                <dd id="coffee4_rating"></dd><br>
+            </div>
+            <div id="coffee5_option" class="coffee_option" onClick="select_place(this.id)">
+              <dt id="coffee5"></dt>
+                <dd id="coffee5_address"></dd>
+                <dd id="coffee5_rating"></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="places_list">
+          <h2 id="donut_header">Donuts</h2>
+          <dl>
+            <div id="donut1_option" class="donut_option" onClick="select_place(this.id)">
+              <dt id="donuts1"></dt>
+                <dd id="donuts1_address"></dd>
+                <dd id="donuts1_rating"></dd><br>
+            </div>
+            <div id="donut2_option" class="donut_option" onClick="select_place(this.id)">
+              <dt id="donuts2"></dt>
+                <dd id="donuts2_address"></dd>
+                <dd id="donuts2_rating"></dd><br>
+            </div>
+            <div id="donut3_option" class="donut_option" onClick="select_place(this.id)">
+              <dt id="donuts3"></dt>
+                <dd id="donuts3_address"></dd>
+                <dd id="donuts3_rating"></dd><br>
+            </div>
+            <div id="donut4_option" class="donut_option" onClick="select_place(this.id)">
+              <dt id="donuts4"></dt>
+                <dd id="donuts4_address"></dd>
+                <dd id="donuts4_rating"></dd><br>
+            </div>
+            <div id="donut5_option" class="donut_option" onClick="select_place(this.id)">
+              <dt id="donuts5"></dt>
+                <dd id="donuts5_address"></dd>
+                <dd id="donuts5_rating"></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="button hidden_on_load">
+        <input type="button" value="Get Directions!" onclick="calcRoute();">
+      </div>
+
+      <div id="attributionsPanel"></div>
+  </body>
+</html>

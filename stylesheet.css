@@ -1,0 +1,88 @@
+* {
+	font-family: sans-serif;
+}
+
+dl {
+	list-style-type: none;
+}
+
+.header {
+	text-align: center;
+}
+
+.coffee_option {
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.donut_option {
+	cursor: pointer;
+}
+
+.place_name {
+	font-weight: bold;
+}
+
+.open_now {
+	font-weight: bold;
+	color: green;
+}
+
+.closed_now {
+	font-weight: bold;
+	color: red;
+}
+
+.hours_unavailable {
+	font-weight: bold;
+	color: blue;
+}
+
+.places_list {
+	width: 30%;
+	float: left;
+}
+
+.button {
+	clear: left;
+}
+
+.hidden_on_load {
+	visibility: hidden;
+}
+
+#headers {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_header {
+	margin-bottom: 10px;
+}
+
+#sub_header {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+#input_text_section {
+	float: left;
+}
+
+#places {
+	clear: left;
+}
+
+#coffee_header {
+	color: #533a29;
+}
+
+#donut_header {
+	color: #FF00FF;
+}
+
+#directionsPanel {
+	float:right;
+	width:30%;
+	height 100%">
+}
