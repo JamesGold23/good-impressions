@@ -7,8 +7,6 @@ Google Places
 
 Places for improvement:
 - Add in transit functionality. Currently, the Google Directions service doesn't allow waypoints for transit directions. One way to get around this is to generate directions from the start to the first shop, then generate more directions from the first shop to the second (if a second one was selected), and then more directions for the second shop to the destination.
-
-- Make calls to the Google Place Details API to give the user more information about a place, like phone number, images, etc. More information means the user can make a more informed decision on which shop he/she wants to go to.
--
+- Make calls to the Google Place Details API to give the user more information about a place, like phone number, images, etc. More information means the user can make a more informed decision on which shop he/she wants to go to.-
 - Make the app prettier. I'm no CSS master!
 
