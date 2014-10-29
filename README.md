@@ -10,3 +10,5 @@ Places for improvement:
 - Make calls to the Google Place Details API to give the user more information about a place, like phone number, images, etc. More information means the user can make a more informed decision on which shop he/she wants to go to.-
 - Make the app prettier. I'm no CSS master!
 
+It's only been tested on Google Chrome.
+
